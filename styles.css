@@ -286,6 +286,9 @@ transition: var(--mainTransition);
     color: var(--mainWhite);
     font-size: 1.2rem;
 }
+.sidebar span , a {
+    color: var(--mainWhite);
+}
 .footer{
     background: var(--mainBlack);
     color: var(--mainWhite);
