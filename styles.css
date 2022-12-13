@@ -18,7 +18,7 @@
 body{
     font-family: 'Fira Code', monospace;
     color: var(--mainBlack);
-    background: var(--mainWhite);
+    background: #c2d7f0;
     line-height: 1.5;
 }
 a{
@@ -61,22 +61,22 @@ p{
 }
 /* navbar */
 .main-navbar{
-    background: var(--darkGrey);
+    background: #3C4048;
     padding: 0 2rem;
 }
 .main-navbar li{
     list-style: none;
 }
 .main-navbar a{
+color: var(--mainWhite);
 text-transform: capitalize;
 display: block;
 padding: 1rem 0;
-color: var(--primaryColor);
 letter-spacing: var(--mainSpacing);
 transition: var(--mainTransition);
 }
 .main-navbar a:hover{
-    color: var(--mainBlack);
+    scale: 1.2;
 }
 
 @media screen and (min-width:992px) {
@@ -90,6 +90,23 @@ transition: var(--mainTransition);
 .main-navbar a{
     text-align: center;
 }
+
+.navigate{
+    padding: 30px;
+}
+
+@media screen and (min-width:768px) {   
+    .navigate{
+        height: 50vh;
+        padding-left: 200px;
+        padding-right: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
 /* hero project */
 .hero-header{
     min-height: 100vh;
@@ -134,12 +151,14 @@ transition: var(--mainTransition);
 .card{
     border: 1px solid var(--darkGrey);
     margin-bottom: 3rem;
+    background: var(--mainWhite);
 }
 .card-info{
     padding: 1rem;
 }
 .card-footer{
-    background: var(--darkGrey);
+    background: var(--mainWhite);
+    border: 0.5px solid var(--darkGrey);
     padding: 0.5rem 1rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -248,7 +267,7 @@ transition: var(--mainTransition);
 
 /* layouts-project */
 .header{
-    background-color: var(--primaryColor);
+    background-color: #3C4048;
     color: var(--mainWhite);
     text-align: center;
     padding: 0.5rem 0;
@@ -278,7 +297,7 @@ transition: var(--mainTransition);
     font-size: 1rem;
 }
 .sidebar{
-    background: var(--primaryColor);
+    background: var(--darkGrey);
     padding: 1rem 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -287,7 +306,7 @@ transition: var(--mainTransition);
     font-size: 1.2rem;
 }
 .sidebar span , a {
-    color: var(--mainWhite);
+    color: var(--mainBlack);
 }
 .footer{
     background: var(--mainBlack);
